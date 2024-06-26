@@ -84,12 +84,12 @@ h1 {
   margin-bottom: 20px;
   color: #333;
 }
-.note h3 {
+.nota h3 {
   color: #333;
   margin-bottom: 10px;
 }
 
-.note p {
+.nota p {
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -107,7 +107,7 @@ h1 {
   justify-content: center;
   margin: 20px;
 }
-.note {
+.nota {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -122,4 +122,10 @@ h1 {
   align-items: center;
   margin-bottom: 20px;
 }
+.note-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px; /* Ajusta el margen según sea necesario */
+}
+
 
