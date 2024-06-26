@@ -6,7 +6,7 @@ body, html, #root {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('wall.jpg'); /* Mantenemos la propiedad background-image */
+  background-image: url('co.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   background: rgba(28, 23, 23, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
 }
 
 .login-container {

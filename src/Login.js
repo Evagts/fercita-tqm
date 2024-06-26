@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-container">
-      <h1>Tu cumpleaños Amor <span className="heart">❤️</span></h1>
+      <h1>Tu Cumpleaños Amor <span className="heart">❤️</span></h1>
       <form className="note-form" onSubmit={handleSubmit}>
         <input
           type="password"

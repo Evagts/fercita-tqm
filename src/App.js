@@ -20,8 +20,13 @@ const App = () => {
       id: 1,
       titulo: '25/06/2024',
       texto: 'Te Quiero, Me gusta estar contigo y pasar el tiempo juntos, me gusta poder abrazarte y ver tu linda mirada y tus bonitos cachetitos y molestarte y decirte que te quiero mucho, me gustas mucho y te quiero asi toda enojona y celosa,Todo va a estar bien amor, animo, ten una linda noche y recuerda que te quiero mucho preciosa ❤️',
-      imagen: 'banner.jpgh'
+      imagen: 'banner.jpg'
     },
+    {
+      id: 2,
+      titulo: '26/06/2024',
+      texto: 'Waos, no se que escribirte pero quiero que recuerdes que te quiero mucho y me gusta mucho el sabor de tu gloss JAJAJA, no se pero fue un bonito dia aunque no estuvimos juntos mucho rato pero igual, estoy feliz de estar contigo y ya dejate querer no?, Te Quiero Mucho Doña fresona (estabas rojisima amor ❤️). Besitos y Piquetitos 💕'
+    }
   ];
 
   const handleSubmit = (e) => {
