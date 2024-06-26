@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Login from './Login';
+import NoteBoard from './NoteBoard';
 import './App.css';
+import song from './song.mp3'; // Ruta al archivo MP3 de la canción
+import banner from './banner.jpg'; // Ruta al archivo JPG del banner
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [password, setPassword] = useState('');
+  const correctPassword = '30112008';
+
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const notas = [
+    {
+      id: 1,
+      titulo: 'Nota 1',
+      texto: 'Esta es la primera nota',
+    },
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (password === correctPassword) {
+      handleLogin();
+    } else {
+      alert('Contraseña incorrecta');
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {isLoggedIn ? (
+        <>
+          <NoteBoard notas={notas} />
+          
+        </>
+      ) : (
+        <Login onLogin={handleLogin} />
+      )}
     </div>
   );
-}
+  
+};
 
 export default App;

@@ -1,38 +1,125 @@
-.App {
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('wall.jpg'); /* Mantenemos la propiedad background-image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 23, 23, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(51, 43, 43, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px; /* Ajusta el ancho del contenedor según sea necesario */
+}
+
+.login-container h1 {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note-form input[type="password"] {
+  align-self: center;
+  size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px; /* Ajusta el tamaño de fuente */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  resize: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 175px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.note h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.note p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+/* Ajusta el posicionamiento y el tamaño del GIF */
+.gif-corner {
+  position: fixed;
+  left: 10px; /* Ajusta la posición izquierda según sea necesario */
+  bottom: 10px; /* Ajusta la posición inferior según sea necesario */
+  width: 100px; /* Ajusta el ancho del GIF */
+  z-index: 1000; /* Ajusta el valor de z-index para asegurarte de que esté sobre otros elementos */
+}
+.note-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.note {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.note-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
