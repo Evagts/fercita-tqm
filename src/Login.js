@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Login.css';
 
 const Login = ({ onLogin }) => {
+  const [password, setPassword] = useState('');
+
+  const handleChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin();
+    onLogin(password);
   };
 
   return (
@@ -12,14 +19,16 @@ const Login = ({ onLogin }) => {
       <form className="note-form" onSubmit={handleSubmit}>
         <input
           type="password"
-          placeholder="La fecha va aqui..."
+          placeholder="La fecha va aquí..."
+          value={password}
+          onChange={handleChange}
           style={{ width: '200px', padding: '10px', fontSize: '16px' }} // Ajusta el tamaño y otros estilos aquí
         />
         <button type="submit">Ingresar</button>
       </form>
       {/* Aquí se inserta el iframe de Spotify */}
       <iframe
-        style={{ borderRadius: '12px' }}
+        style={{ borderRadius: '12px', marginTop: '20px' }} // Agrega margen superior para separar del formulario
         src="https://open.spotify.com/embed/playlist/1l6ECiruys6VynapMCMaL5?utm_source=generator&theme=0"
         width="100%"
         height="352"
