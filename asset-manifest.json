@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fercita-tqm/static/css/main.40769556.css",
-    "main.js": "/fercita-tqm/static/js/main.7e4955c9.js",
+    "main.js": "/fercita-tqm/static/js/main.de205186.js",
     "static/js/453.a759dce4.chunk.js": "/fercita-tqm/static/js/453.a759dce4.chunk.js",
     "static/media/song.mp3": "/fercita-tqm/static/media/song.9974ad642dcc6e89a836.mp3",
     "static/media/co.jpg": "/fercita-tqm/static/media/co.e652f5b98131571ddbe1.jpg",
@@ -9,11 +9,11 @@
     "static/media/banner.jpg": "/fercita-tqm/static/media/banner.5694eac0b492328e469f.jpg",
     "index.html": "/fercita-tqm/index.html",
     "main.40769556.css.map": "/fercita-tqm/static/css/main.40769556.css.map",
-    "main.7e4955c9.js.map": "/fercita-tqm/static/js/main.7e4955c9.js.map",
+    "main.de205186.js.map": "/fercita-tqm/static/js/main.de205186.js.map",
     "453.a759dce4.chunk.js.map": "/fercita-tqm/static/js/453.a759dce4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40769556.css",
-    "static/js/main.7e4955c9.js"
+    "static/js/main.de205186.js"
   ]
 }
