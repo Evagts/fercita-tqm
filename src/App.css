@@ -19,8 +19,8 @@ body, html, #root {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(28, 23, 23, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(16, 14, 14, 0.3);
+  backdrop-filter: blur(15px);
 }
 
 .login-container {
@@ -28,7 +28,7 @@ body, html, #root {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(51, 43, 43, 0.8);
+  background: rgba(30, 26, 26, 0.8);
   padding: 21px;
   border-radius: 21px;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
@@ -84,10 +84,10 @@ button {
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #000000;
 }
 .nota h3 {
-  color: #333;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -110,13 +110,16 @@ h1 {
   margin: 20px;
 }
 .nota {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.67);
+  border: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 16px;
   margin: 10px;
   width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px); /* Aplicar efecto blur */
+  -webkit-backdrop-filter: blur(20px); /* Compatibilidad con Safari */
 }
 .note-form {
   display: flex;
@@ -129,5 +132,3 @@ h1 {
   height: auto;
   margin-top: 10px; /* Ajusta el margen según sea necesario */
 }
-
-

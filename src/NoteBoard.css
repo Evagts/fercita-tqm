@@ -15,4 +15,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* Aplicar efecto blur */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+}
+.note {
+  background: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+  backdrop-filter: blur(10px); /* Aplicar efecto blur */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 16px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

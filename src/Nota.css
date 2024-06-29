@@ -1,20 +1,19 @@
 .nota {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.3); /* Fondo blanco con opacidad */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-  }
-  
-  .blur-background {
-    backdrop-filter: blur(10px); /* Aplica el blur */
-    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
-  }
-  
-  .nota-imagen {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 10px;
-  }
-  
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3); /* Fondo blanco con opacidad */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.blur-background {
+  backdrop-filter: blur(10px); /* Aplica el blur */
+  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+}
+
+.nota-imagen {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
