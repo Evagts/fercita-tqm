@@ -47,8 +47,14 @@ const App = () => {
       id:7,
       titulo:'28/06/2024 - Parte 4',
       texto: ' Te Quiero Mucho mi fernandita preciosa, eres muy dulce y tierna, de vdd te quiero amor, gracias por alegrar mis noches y dias amor, te quiero sinceramente de corazon ❤️',
+    },
+    {
+      id:8,
+      titulo:'29/06/2024',
+      texto:'Te Quiero Mucho mi fercita, no se pq pensaste en que yo iba a decir que bye a todo, quiero que sepas que yo quiero estar contigo aunque nos tome tiempo y esfuerzo, so ninguno de los 2 se ira del otro tan facil vea?, como sea Te Adoro, Extraño tus complacientes abrazos y tu gloss de fresa JAJAJAJA, te quiero, Te Dedico Te Quiero de los hombres G, Te adoro mi dulce Amor ❤️',
     }
   ];
+  const sortedNotas = notas.sort((a, b) => b.id - a.id);
 
   const handleSubmit = (e) => {
     e.preventDefault();
